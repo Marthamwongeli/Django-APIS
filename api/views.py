@@ -10,11 +10,6 @@ from teacher.models import Teacher
 from .serializers import TeacherSerializer
 from classperiod.models import ClassPeriod
 from .serializers import ClassPeriodSerializer
-# from course.models import Courses
-# from .serializers import CoursesSerializer
-# # api/views.py
-
-# from .serializers import CoursesSerializer
 
 class StudentListView(APIView):
     def get(self, request):
