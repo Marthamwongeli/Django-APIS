@@ -10,7 +10,7 @@ class Student(models.Model):
     code = models.PositiveSmallIntegerField()
     username = models.CharField(max_length=27)
     Student_class = models.CharField(max_length=20)
-    Student_picture = models.ImageField()
+    Student_picture = models.ImageField(null=True, blank=True)
    
    
     

@@ -9,7 +9,7 @@ class Teacher(models.Model):
     password = models.CharField(max_length = 20)
     email = models.EmailField()
     teacher_id = models.IntegerField(primary_key=True)
-    teacher_image = models.ImageField()
+    teacher_image = models.ImageField(null=True, blank=True)
     
     
     def _str_(self):
