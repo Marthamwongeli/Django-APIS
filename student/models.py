@@ -13,6 +13,7 @@ class Student(models.Model):
     Student_picture = models.ImageField(null=True, blank=True)
    
    
+   
     
 
     def _str_(self):
