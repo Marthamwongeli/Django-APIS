@@ -11,8 +11,8 @@ class Student(models.Model):
     username = models.CharField(max_length=27)
     Student_class = models.CharField(max_length=20)
     Student_picture = models.ImageField(null=True, blank=True)
-   
-   
+    date_of_birth=models.DateField(null=True, blank=True, default='2000-01-01')
+    
    
     
 

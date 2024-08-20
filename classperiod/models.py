@@ -10,6 +10,8 @@ class ClassPeriod(models.Model):
     day_of_week = models.CharField(max_length=2)
     semester = models.IntegerField(blank=True, null=True)
     year = models.IntegerField()
+    
+    
     def __str__(self):
         return f"{self.course} ({self.day_of_week})"
 
